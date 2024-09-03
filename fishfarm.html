@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishfarming site</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <h1>LOGO</h1>
+            <nav class="navigator">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Testimonia">Testimonia</a></li>
+                    <li><a href="#contact">Location</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="angles">
+              <i class="fa-solid fa-angle-up" id="icon"></i>
+            </div>
+
+            <div class="contact">
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+
+        <div class="header_topic" id="Home">
+            <!-- swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/catfish.jpg" alt="">
+                   <div class="content">
+                    <h1><b>NEUF LINK</b> <span>Fish Farming</span></h1>
+                    <p>Brings you a Substainable Aquaculture for a Healthier futur</p>
+                    <a href="#">contact now</a>
+                   </div>
+                </div>
+                  <div class="swiper-slide"> <img src="images/feed.jpg" alt="farming">
+                     <div class="content">
+                    <h1><b>NEUF LINK</b> <span>Fish Farming</span></h1>
+                    <p>Brings you a Substainable Aquaculture for a Healthier futur</p>
+                    <a href="#">contact now</a>
+                   </div></div>
+                  <div class="swiper-slide"><img src="images/man-546322_1280.jpg" alt="farming">
+                    <div class="content">
+                      <h1><b>NEUF LINK</b> <span>Fish Farming</span></h1>
+                      <p>Brings you a Substainable Aquaculture for a Healthier futur</p>
+                      <a href="#">contact now</a>
+                     </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div>
+              </div>
+
+              <!-- swipre -->
+        </div>
+
+      
+       
+     </header>
+
+
+
+     
+     <script>
+        var swiper2 = new Swiper(".mySwiper2", {
+          grabCursor: true,
+          effect: "creative",
+          autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+          creativeEffect: {
+            prev: {
+              shadow: true,
+              translate: ["-120%", 0, -500],
+            },
+          
+            next: {
+              shadow: true,
+              translate: ["120%", 0, -500],
+            },
+          },
+          pagination: {
+          el: ".swiper-pagination",
+        },
+        });
+      </script>
+</body>
+</html>
